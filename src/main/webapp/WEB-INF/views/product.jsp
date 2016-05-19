@@ -99,7 +99,7 @@
                     font-size: 20px;
                     font-family: Segoe UI, Tahoma, sans-serif;
                 " >
-                &nbsp;&nbsp;&nbsp;Music Hub ${searchKey}
+                &nbsp;&nbsp;&nbsp;Music Hub
                 
                 <nav style="z-index: 4;" class="navbar navbar-inverse">
 				  <div class="container-fluid">
