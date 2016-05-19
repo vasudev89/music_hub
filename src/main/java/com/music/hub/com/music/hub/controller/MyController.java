@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -55,6 +57,18 @@ public class MyController
 	public ModelAndView signup() throws IOException{
 		
 		ModelAndView mav = new ModelAndView("signup");
+		
+		return mav ;
+	}
+	
+	@RequestMapping(value="/product" , method = RequestMethod.GET )
+	public ModelAndView productWithKey(@RequestParam(value="searchKey",defaultValue="") String searchKey) throws IOException{
+		
+		ModelAndView mav = new ModelAndView("product");
+		
+		System.out.println(searchKey);
+		
+		mav.addObject("searchKey",searchKey);
 		
 		return mav ;
 	}

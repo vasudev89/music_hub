@@ -90,7 +90,7 @@
 	    	<li><a class="nav navbar-left" href="index">Home</a></li>
 	        <li><a href="aboutus">About Us</a></li>
 	        <li><a href="contactus">Contact Us</a></li>
-	        
+	        <li><a href="product">Products</a></li>
 	    </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="login">Login</a></li>

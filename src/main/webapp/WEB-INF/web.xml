@@ -17,6 +17,7 @@
   	<url-pattern>/login</url-pattern>
   	<url-pattern>/aboutus</url-pattern>
   	<url-pattern>/signup</url-pattern>
+  	<url-pattern>/product</url-pattern>
   	<url-pattern></url-pattern>
   </servlet-mapping>
   

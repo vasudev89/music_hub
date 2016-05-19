@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <head>
 
@@ -31,6 +33,8 @@
 </head>
 
 <body>
+
+	<c:set var="searchKey" scope="session" value="lallu"/>
 
 	<script type="text/javascript" src="resources/references/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="resources/references/js/bootstrap.min.js"></script>
@@ -92,19 +96,19 @@
                 <div class="row">
                 <br>
 	                <div class="col-md-4">
-		                <a href="#" ><div class="img-circle img-responsive nopadding col-centered" style="background-image: url(resources/images/guitar.jpg);width: 280px ; height: 220px;" > <a align="center" href="#" style="line-height: 340px; font-size: 140%;" > Guitars </a> </div></a>
+		                <a href="product" ><div class="img-circle img-responsive nopadding col-centered" style="background-image: url(resources/images/guitar.jpg);width: 280px ; height: 220px;" > <a align="center" href="product?searchKey=Guitar" style="line-height: 340px; font-size: 140%;" > Guitars </a> </div></a>
 		                <br><br>
 		                <p style="font-weight: none; font-size: 12px; font-style: none; line-height: 20px;">The guitar is an ancient and noble instrument, whose history can be traced back over 4000 years.The name "guitar" comes from the ancient Sanskrit word for "string" - "tar".</p>
 	                </div>
 	                
 	                <div class="col-md-4">
-		                <a href="#" ><div class="img-circle img-responsive nopadding col-centered" style="background-image: url(resources/images/piano.jpg);width: 280px ; height: 220px;" > <a align="center" href="#" style="line-height: 340px; font-size: 140%;" > Pianos </a> </div></a>
+		                <a href="product" ><div class="img-circle img-responsive nopadding col-centered" style="background-image: url(resources/images/piano.jpg);width: 280px ; height: 220px;" > <a align="center" href="product?searchKey=Piano" style="line-height: 340px; font-size: 140%;" > Pianos </a> </div></a>
 		                <br><br>
 		                <p style="font-weight: none; font-size: 12px; font-style: none; line-height: 20px;">They come in all shapes and sizes, from a small spinet to a huge 9-foot concert grand, upright, console, grand, electric, digital reproducing.</p>
 	                </div>
 	                
 	                <div class="col-md-4">
-		                <a href="#" ><div class="img-circle img-responsive nopadding col-centered" style="background-image: url(resources/images/accessories.jpg); background-size: 280px 220px; width: 280px ; height: 220px;" > <a align="center" href="#" style="line-height: 340px; font-size: 140%;" > Accessories </a> </div></a>
+		                <a href="product" ><div class="img-circle img-responsive nopadding col-centered" style="background-image: url(resources/images/accessories.jpg); background-size: 280px 220px; width: 280px ; height: 220px;" > <a align="center" href="product?searchKey=Accessories" style="line-height: 340px; font-size: 140%;" > Accessories </a> </div></a>
 		                <br><br>
 		                <p style="font-weight: none; font-size: 12px; font-style: none; line-height: 20px;">A variety of add-ons, which would bring a spring in your tunes.</p>
 	                </div>
@@ -177,6 +181,7 @@
 	    	<li><a class="nav navbar-left" href="index">Home</a></li>
 	        <li><a href="aboutus">About Us</a></li>
 	        <li><a href="contactus">Contact Us</a></li>
+	        <li><a href="product">Products</a></li>
 	        
 	    </ul>
       <ul class="nav navbar-nav navbar-right">
